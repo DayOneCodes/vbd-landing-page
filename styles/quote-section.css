@@ -1,0 +1,65 @@
+:root{
+  --primary-color: #172727;
+  --secondary-color: white;
+  --h1-font: 2.8rem;
+  --h2-font: 2.2rem;
+  --h3-font: 1.8rem;
+  --body-p-font: 1.1rem;
+  --menu-font: 1rem;
+  --nav-links-font: 1.1rem;
+  --footer-heading-font: 1.3rem;
+  --brand-name-font: 1.8rem; 
+  --copyright-font: 0.9rem; 
+  --footer-p-font: 1rem;
+  --header-padding: 1.2rem 3rem;
+  --section-padding: 4rem;
+  --footer-padding: 4rem 3rem;
+  --header-height: 80px;
+  --menu-spacing: 0.75rem;
+  --header-margin-bottom: 2.5rem; 
+  --title-margin-bottom: 1.25rem; 
+  /* Confirm following styles */
+  --hero-title-font: 600%;
+  --button-padding: 0.5rem;
+  --body-element-spacing: 1.5rem;
+  --body-button-padding:  1rem 0;
+}
+
+.quote-section{
+  height: 50vh;
+  padding: var(--section-padding);
+  background-color: var(--primary-color);
+  position: relative;
+  z-index: 1;
+}
+
+.quote-section::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/page-images/image.png');
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.quote-section>.quote-wrapper{
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.quote-section>.quote-wrapper>p{
+  font-family: "Playfair Display", serif;
+  font-size: var(--h2-font);
+  /* text-align: justify; */
+  font-weight: 900;
+  color: var(--secondary-color);
+  word-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  opacity: 1;
+  z-index: 10;
+  margin: auto 0;
+}

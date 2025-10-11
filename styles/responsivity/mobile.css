@@ -1,0 +1,212 @@
+@media (max-width: 576px) {
+:root{
+  --primary-color: #172727;
+  --secondary-color: white;
+  --h1-font: 1.8rem;
+  --h2-font: 1.5rem;
+  --h3-font: 1.3rem;
+  --body-p-font: 0.95rem;
+  --menu-font: 0.9rem;
+  --nav-links-font: 1rem;
+  --footer-heading-font: 1.1rem;
+  --brand-name-font: 1.2rem;
+  --copyright-font: 0.75rem;
+  --footer-p-font: 0.85rem;
+  --header-padding: 0.8rem 1rem;
+  --section-padding: 2rem 0;
+  --footer-padding: 2rem 1rem;
+  --header-height: 60px;
+  --menu-spacing: 0.5rem;
+  --header-margin-bottom: 1.5rem; 
+  --title-margin-bottom: 0.75rem;
+    /* Confirm following styles */
+  --hero-title-font: 300%;
+  --button-padding: 0.5rem;
+  --body-element-spacing: 1.5rem;
+  --body-button-padding:  1rem;
+  --body-button-width: 55%;
+}
+
+.mobile-nav{
+  display: flex;
+  position: fixed;
+  color: #333;
+  top: var(--header-height);
+  right: -1px;
+  left: 25%;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+  transform: translateX(101%);
+  z-index: 300000;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mobile-nav>nav{
+  margin: 30px auto;
+  background-color: inherit;
+}
+
+.mobile-nav>nav>ul{
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+}
+
+.mobile-nav>nav>ul>li{
+  padding-block: var(--menu-spacing);
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.mobile-nav>nav>ul>li>a{
+  background-color: inherit;
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: var(--nav-links-font);
+}
+
+.nav-list{
+  display: none;
+}
+
+.hamburger-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 18px;
+  width: 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.hamburger-menu>div{
+  height: 3px;
+  width: 100%;
+  z-index: 20;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+/* LANDING PAGE */
+/* .landing-page-hero>div{
+  position: relative;
+  bottom: 4.5rem;
+} */
+
+/* OVERLAPPING PAGE */
+
+.second-page{
+  width: 70%;
+  height: 320px;
+  top: 30rem;
+  right: 0rem;
+  left: 0.6rem;
+  border-radius: 15px;
+  opacity: 1;
+  display: none;
+}
+
+.animation-second-page{
+  display: block;
+  top: 7rem;
+  width: 100%;
+  right: 0rem;
+  left: 0rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ABOUT ME SECTION */
+
+.about-me-section{
+  flex-direction: column-reverse;
+  padding: 1rem;
+  height: 106vh;
+  justify-content: space-around;
+}
+
+/* POTFOLIO SECTION */
+.portfolio-section{
+  padding: 1rem;
+}
+
+.landing-carousel-parent-div{
+  max-height: 300px;
+  overflow-y: scroll;
+  padding-top: 168vh;
+}
+
+.portfolio-flex-row{
+  flex-direction: column;
+}
+
+/* QUOTE SECTION */
+.quote-section{
+  padding: 1rem;
+}
+
+.quote-section>.quote-wrapper{
+  display: flex;
+}
+
+.quote-section>.quote-wrapper>p{
+   font-size: 1.4rem;
+   word-spacing: 0.1rem;
+   letter-spacing: 0.1rem;
+  color: var(--secondary-color);
+  margin: auto 0;
+}
+
+/* .quote-section>.quote-wrapper>p{
+  font-family: "Playfair Display", serif;
+  text-align: justify;
+  font-weight: 900;
+  color: var(--secondary-color);
+  letter-spacing: 0.2rem;
+ 
+} */
+
+/* CONTACT SECTION */
+
+.contact-me-section{
+  padding: 1rem;
+}
+
+.contact-me-section>div>form>.inputs>input{
+  margin-bottom: var(--body-element-spacing);
+}
+
+/* FOOTER */
+
+footer{
+  flex-direction: column;
+}
+
+/* JS TOGGLES */
+
+.mobile-nav-display{
+  transform: translateX(0%);
+}
+
+.hamburger-1{
+  transform: rotate(45deg) translateY(11px);
+}
+
+.hamburger-2{
+  transform: rotate(-45deg) translateY(-11px); 
+}
+
+.hamburger-3{
+    display: none;
+  }
+
+}

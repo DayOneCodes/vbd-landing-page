@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsivity/mobile.css">
+  <link rel="stylesheet" href="styles/responsivity/tablet.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- ICONS/CDNJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+
+<!-- Landing page -->
+      <section class="landing-page">    
+        
+<!-- Mobile View Navigation Menu -->
+          <section class="mobile-nav" id="js-mobile-nav">
+             <nav>
+                  <ul type="none">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">Portfolio</a></li>
+                     <!-- <li>Book A Session</li> To be added to update -->
+                  </ul>
+              </nav>
+          </section>
+<!-- End of mobile view navigation menu -->
+          <header id="js-landing-page-header">
+              <div class="text-bold brand-name" id="js-brand-name">VISUALS BY DAVE</div>
+
+              <nav>
+                  <ul class="nav-list">
+                      <li><a href="#" >Home</a></li>
+                      <li><a href="#">About Me</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <!-- <li>Book A Session</li> To be added to update -->
+                  </ul>
+<!-- Hamburger menu for mobile responsivity  -->
+                  <div class="hamburger-menu" id="js-hamburger-menu">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                  </div>
+<!-- End of hamburger menu -->
+              </nav>
+          </header>
+
+          <section class="landing-page-hero">
+              <div class="landing-page-hero-title-container" id="js-landing-page-hero-title-container">
+                  <h1 id="js-h1">
+                    Photographer &<br>Film Maker
+                  </h1>
+                  <p>London, UK</p>
+                  <button id="js-view-portfolio-btn">View Portfolio</button>
+              </div>
+          </section>
+      </section>
+<!-- End of landing page -->
+
+
+      <section class="second-page">
+<!-- About me section -->
+          <section class="about-me-section" id="js-about-me-section">
+              <div class="about-me-image"></div>
+
+              <div class="about-me-article">
+                  <h2>About Me</h2>
+                  <hr>
+                  <article>I’m a passionate photographer driven by a desire to capture raw emotion, genuine moments, and untold stories through a creative lens. My approach is rooted in curiosity and empathy, allowing me to see beauty in everyday details and authenticity in fleeting expressions. Context deeply enriches my work, helping me create images that are not only visually compelling but emotionally resonant.<br><br> As someone new to the industry, I’m eager to collaborate, grow, and continually refine my craft. Every project is an opportunity to learn, connect, and create meaningful work that speaks beyond the frame.</article>
+                  <button class="view-my-works-btn">View My Works</button>
+              </div> 
+          </section>
+<!-- End of about me section -->
+
+<!-- My Portfolio Section -->
+          <section class="portfolio-section" id="js-portfolio-section">
+            <div class="portfolio-header-container">
+                <h2>Check My Portfolio</h2>
+                <hr>
+            </div>
+            
+            <div class="portfolio-flex-row landing-carousel-parent-div">
+                <div class="portfolio-flex-row">
+                    <div class="portfolio-flex-column">
+                        <img class="portfolio-short-card" src="images/page-images/gallery-images/A15.jpg" alt="">
+                        <img class="portfolio-long-card" src="images/page-images/gallery-images/A19.jpg" alt="">
+                    </div>
+
+                    <div class="portfolio-flex-column">
+                        <img class="portfolio-long-card" src="images/page-images/gallery-images/1888393390.jpg" alt="">
+                        <img class="portfolio-short-card" src="images/page-images/gallery-images/A5.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="portfolio-flex-row">
+                    <div class="portfolio-flex-column">
+                        <img class="portfolio-short-card" src="images/page-images/gallery-images/AA.jpg" alt="">
+                        <img class="portfolio-long-card" src="images/page-images/gallery-images/A20.jpg" alt="">
+                    </div>
+
+                    <div class="portfolio-flex-column">
+                        <img class="portfolio-long-card" src="images/page-images/gallery-images/AG.jpg" alt="">
+                        <img class="portfolio-short-card" src="images/page-images/gallery-images/1716050292.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <button>VIEW ALL</button>
+          </section>
+<!-- End of my portfolio section -->
+<!-- Quote section -->
+          <section class="quote-section" id="js-quote-section">
+            <div class="quote-wrapper">
+                <p>
+                            "Every frame tells a story - raw, real, and unfiltered. These moments aren't just images, they're emotions frozen in time, capturing the essence of presence, connection, and self-expression"
+                </p>
+            </div>
+          </section>
+ <!-- End of quote section -->
+<!-- Contact me section -->
+          <section class="contact-me-section" id="js-contact-me-section">
+              <div>
+                  <div class="background"></div>
+                  <header>
+                      <h2>Contact Me</h2>
+                      <hr>
+                  </header>
+                  <p>I would love to get suggestions from you</p>
+                  <form>
+                      <div class="inputs">
+                        <input type="text" placeholder="Your name">
+
+                        <input type="email" placeholder="Your E-mail Address">
+                      </div>
+
+
+                      <textarea placeholder="Your Message"></textarea>
+
+                      <button class="send-mail-button">Send it</button>
+                  </form>
+              </div>
+          </section>
+<!--  End of contact me section -->
+<!-- Footer -->
+          <footer id="js-footer">
+              <div class="footer-card get-in-touch-card">
+                  <h3>Get In Touch</h3>
+                  <hr>
+
+                  <div>
+                      <a>contact.dee@gmail.com</a>
+                      <p>(355)-202-234-045</p>
+                  </div>
+              </div>
+
+              <div class="footer-card my-social-links">
+                  <h3>My social links</h3>
+                  <hr>
+
+                  <div>
+                      <a href=""><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40editsb_ydee%3F_t%3DZN-8uqCDgAvdZe%26_r%3D1%26fbclid%3DPAZXh0bgNhZW0CMTEAAaekezL6FTIhprYrEQKKNitIPcp0ITOD9iplbk8do0tJz9q86rwZSkZE5Mvgjg_aem_BWtxVVR0D0SkfcSxbOAzGw&e=AT2nknWDKEDsV9pg23EMJEDcHZO7MpkeKryXtzceFCh34VBB9-gpqEljBagVkZs247HxjzNhNyixOy6y7YkLrpTF3OAjbnZvn8Mc2F28mCHVJcB7tQmkYzw" target="_blank"><i class="fab fa-tiktok"></i></a>
+                      <a href="https://www.instagram.com/visualsby_dave?utm_source=ig_web_button_share_sheet&igsh=MXFzbHZmazQ1bGphbg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+
+              <p class="copyright-text"> &#169;  2025 DayOneCodes</p>
+          </footer>
+<!-- End of footer -->
+      </section>
+  </div>
+<script src="script/script.js" type="module"></script>
+</body>
+</html>

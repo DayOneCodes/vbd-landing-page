@@ -1,0 +1,390 @@
+@import url('./about-me-page.css');
+@import url('./portfolio-page.css');
+@import url('./quote-section.css');
+@import url('./contact-page.css');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display SC", serif;
+}
+
+body{
+  height: auto;
+  overflow-x: hidden;
+}
+
+:root{
+  --primary-color: #172727;
+  --secondary-color: white;
+  --h1-font: 2.8rem;
+  --h2-font: 2.2rem;
+  --h3-font: 1.8rem;
+  --body-p-font: 1.1rem;
+  --menu-font: 1rem;
+  --nav-links-font: 1.1rem;
+  --footer-heading-font: 1.3rem;
+  --brand-name-font: 1.8rem; 
+  --copyright-font: 0.9rem; 
+  --footer-p-font: 1rem;
+  --header-padding: 1.2rem 3rem;
+  --section-padding: 4rem;
+  --footer-padding: 4rem 3rem;
+  --header-height: 80px;
+  --menu-spacing: 0.75rem;
+  --header-margin-bottom: 2.5rem; 
+  --title-margin-bottom: 1.25rem; 
+  /* Confirm following styles */
+  --hero-title-font: 600%;
+  --button-padding: 0.5rem;
+  --body-element-spacing: 1.5rem;
+  --body-button-padding:  1rem 0;
+  --body-button-width: 40%;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 200vh;
+  background-color: var(--secondary-color);
+}
+
+.mobile-nav{
+  display: none;
+}
+
+
+/* LANDING PAGE */
+
+.landing-page{
+  height: 100vh;
+  /* background: rgba(0, 0, 0, 0.4); */
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.landing-page::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+   background-image: url('../images/page-images/image.png');
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.landing-page>header{
+  height: var(--header-height);
+  padding: var(--header-padding);
+  margin-bottom: var(--header-margin-bottom);
+  display: flex;
+  justify-content: space-between;
+  /* background-color: var(--primary-color); */
+  background-image: inherit;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+  /* border-bottom: 2px solid var(--secondary-color); remove this style on scroll */
+}
+
+header>.brand-name{
+  font-size: var(--brand-name-font);
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-list>li{
+  display: inline;
+  padding-inline: var(--menu-spacing);
+}
+
+.nav-list>li>a{
+  text-decoration: none;
+  font-size: var(--nav-links-font);
+  color: var(--secondary-color);
+}
+
+.nav-list li a:hover{
+  border-bottom: solid var(--secondary-color);
+}
+
+.nav-list li:nth-child(1) a{
+  border-bottom: solid var(--secondary-color);
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+
+/* HERO */
+
+.landing-page-hero{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.landing-page-hero>div{
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+.landing-page-hero h1{
+  font-size: var(--hero-title-font);
+  color: var(--secondary-color);
+  text-shadow: 5px 2px #172727;
+  margin-bottom: var(--body-element-spacing);
+}
+
+.landing-page-hero-title-container{
+  background: black;
+  background-clip: text;
+  z-index: 5;
+}
+
+.landing-page-hero-title-container>p{
+  font-size: var(--body-p-font);
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: var(--body-element-spacing);
+}
+
+.landing-page-hero-title-container>button{
+  padding: var(--body-button-padding);
+  font-size: var(--body-p-font);
+  width: var(--body-button-width);
+  border: none;
+  border-radius: 5px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 50s ease-in-out;
+  font-weight: 600;
+}
+
+
+/* OVERLAPPING PAGE */
+
+.second-page{
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  /* top: var(--header-height); */
+  top: calc(var(--header-height) + 3.5rem);
+  right: 10rem;
+  z-index: 4;
+  /* padding: var(--section-padding); */
+  /* animation: swipeDiv 1.5s ease-in-out 0s infinite normal forwards; */
+  /*border-bottom-left-radius: 10px; Remove both this style and the following lines on scroll */
+  /* border-bottom-right-radius: 10px; */
+  border-radius: 15px;
+  opacity: 1;
+  /* background-image: url('../images/page-images/bue.jpg');
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover; */
+  /* border: 10px solid var(--primary-color); */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+
+/* FOOTER */
+
+footer{
+  height: auto;
+  display: flex;
+  padding: var(--footer-padding);
+  gap: 20%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+footer>p{
+  font-family: "Playfair Display", serif;
+  color: var(--secondary-color);
+  flex: 1;
+}
+
+
+.footer-card h3{
+   font-size: var(--footer-heading-font);
+   margin-bottom: 0.7rem;
+}
+
+.footer-card hr{
+  width: 10%;
+  margin-bottom: 1.5rem;
+}
+
+.footer-card{
+  margin-bottom: 2.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-card p{
+  margin-top: 0.3rem;
+}
+
+.get-in-touch-card>div>p{
+  font-size: var(--footer-p-font);
+}
+
+.get-in-touch-card>div>a{
+  font-size: var(--footer-p-font);
+  cursor: pointer;
+}
+
+.get-in-touch-card>div>p, .my-social-links>div{
+  text-align: center;
+}
+
+.get-in-touch-card>div>p, .get-in-touch-card>div>a{
+  font-family: "Playfair Display", serif;
+}
+
+.my-social-links>div>a>i{
+  font-size: 25px;
+}
+
+.copyright-text{
+  font-size: var(--copyright-font);
+}
+
+
+
+/* JS TOGGLE */
+
+.header-animation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  animation: zindex 0.3s ease-in-out 0s 1 normal forwards;
+  opacity: 1;
+  background-color: var(--primary-color);
+
+}
+
+.animation-second-page{
+  height: auto;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  border: none;
+  box-shadow: none;
+  /* See if you prefer the margin top to be on the original position of this page */
+  margin-top: calc(var(--header-height) - 2rem) ;
+  background-color: var(--secondary-color);
+  /* animation: subtleBackgroundRemoval 0.3s ease-in-out 0s 1 normal forwards; */
+  display: block;
+}
+
+.js-display-element{
+  display: none;
+}
+
+@keyframes zindex {
+  0% {
+    z-index: 3;
+  }
+  25% {
+    z-index: 3;
+  }
+  50%{
+    z-index: 3;
+  }
+  75% {
+    z-index: 4;
+  }
+  100%{
+    z-index: 5;
+  }
+}
+
+@keyframes subtleDisplay {
+  10%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0.3;
+  }
+  90%{
+    opacity: 0.6;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes subtleBackgroundRemoval {
+  25%{
+  background-image: url('../images/page-images/bue.jpg');
+  }
+  50%{
+    background-image: url('../images/page-images/bue.jpg');
+  }
+  51%{
+    opacity: 0.9;
+  }
+  52%{
+    opacity: 0.8;
+  }
+  53%{
+    opacity: 0.7;
+  }
+  54%{
+    opacity: 0.6;
+  }
+  55%{
+    opacity: 0.5;
+  }
+  56%{
+    opacity: 0.4;
+  }
+  57%{
+    opacity: 0.3;
+  }
+  75%{
+  background-image: none;
+  }
+  100%{
+  background-image: none;
+  }
+}

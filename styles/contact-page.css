@@ -1,0 +1,101 @@
+:root{
+  --primary-color: #172727;
+  --secondary-color: #F2EDFA;
+  --h1-font: 2.8rem;
+  --h2-font: 2.2rem;
+  --h3-font: 1.8rem;
+  --body-p-font: 1.1rem;
+  --menu-font: 1rem;
+  --nav-links-font: 1.1rem;
+  --footer-heading-font: 1.3rem;
+  --brand-name-font: 1.8rem; 
+  --copyright-font: 0.9rem; 
+  --footer-p-font: 1rem;
+  --header-padding: 1.2rem 3rem;
+  --section-padding: 4rem 0;
+  --footer-padding: 4rem 3rem;
+  --header-height: 80px;
+  --menu-spacing: 0.75rem;
+  --header-margin-bottom: 2.5rem; 
+  --title-margin-bottom: 1.25rem; 
+  /* Confirm following styles */
+  --hero-title-font: 600%;
+  --button-padding: 0.5rem;
+  --body-element-spacing: 1.5rem;
+  --body-button-padding:  1rem 0;
+  --body-button-width: 40%;
+}
+
+.contact-me-section{
+  width: 100vw;
+  height: auto;
+  background-color: var(--secondary-color);
+  padding: var(--section-padding);
+}
+
+.contact-me-section>div{
+  position: relative;
+  height: 100%;
+}
+
+.contact-me-section>div>header>h2{
+  font-size: var(--h2-font);
+  /* margin-bottom: var(--body-element-spacing); */
+  color: var(--primary-color);
+}
+
+.contact-me-section>div>header>hr{
+  width: 10%;
+  margin-bottom: var(--body-element-spacing);
+  background-color: black;
+}
+
+.contact-me-section>div>p{
+  font-family: var(--body-p-font);
+  margin-bottom: var(--body-element-spacing);
+  color: var(--primary-color);
+}
+
+.contact-me-section>div>form>.inputs, .contact-me-section>div>form>textarea{
+  display: block;
+  margin-bottom: var(--body-element-spacing);
+}
+
+.contact-me-section>div>form>.inputs>input{
+  padding: var(--button-padding);
+  background: inherit;
+  border: none;
+  color: var(--primary-color);
+  border-bottom: 1px solid;
+  margin-right: var(--body-element-spacing);
+  border-radius: 0.3rem;
+  border-color: var(--primary-color);
+}
+
+.contact-me-section>div>form>textarea{
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid;
+  width: 100%;
+  font-size: var(--body-p-font);
+  padding: var(--button-padding);
+  height: 10rem;
+  margin-bottom: var(--body-element-spacing);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.contact-me-section>div>form>.send-mail-button{
+  padding: var(--body-button-padding);
+  /* Convert all button sizes to rem or px and have a variable for them */
+  width: calc(var(--body-button-width) - 20%);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: var(--body-p-font);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+
+ 
