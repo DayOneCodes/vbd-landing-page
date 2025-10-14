@@ -20,11 +20,15 @@
   --header-margin-bottom: 1.5rem; 
   --title-margin-bottom: 0.75rem;
     /* Confirm following styles */
-  --hero-title-font: 1rem;
+  --hero-title-font: 2rem;
   --button-padding: 0.5rem;
   --body-element-spacing: 1.5rem;
   --body-button-padding:  1rem;
   --body-button-width: 55%;
+}
+
+*{
+  overflow-x: hidden;
 }
 
 .mobile-nav{
