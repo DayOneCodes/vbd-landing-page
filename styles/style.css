@@ -14,6 +14,7 @@
 body{
   height: auto;
   overflow-x: hidden;
+  background-color: var(--primary-color);
 }
 
 :root{
@@ -49,6 +50,7 @@ body{
   width: 100%;
   height: 200vh;
   background-color: var(--secondary-color);
+  /* background-color: red; */
 }
 
 .mobile-nav{
@@ -161,7 +163,7 @@ header>.brand-name{
   font-size: var(--body-p-font);
   width: var(--body-button-width);
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   color: var(--primary-color);
   background-color: var(--secondary-color);
   cursor: pointer;
