@@ -20,7 +20,7 @@
   --header-margin-bottom: 1.5rem; 
   --title-margin-bottom: 0.75rem;
     /* Confirm following styles */
-  --hero-title-font: 300%;
+  --hero-title-font: 3rem;
   --button-padding: 0.5rem;
   --body-element-spacing: 1.5rem;
   --body-button-padding:  1rem;
@@ -134,8 +134,15 @@
   justify-content: space-around;
 }
 
+.about-me-image{
+  min-height: 25rem;
+  position: relative;
+  top: -2rem;
+}
+
 /* POTFOLIO SECTION */
 .portfolio-section{
+  margin-top: 10rem;
   padding: 1rem;
 }
 
@@ -156,6 +163,8 @@
 
 .quote-section>.quote-wrapper{
   display: flex;
+  width: 80%;
+  height: 80%;
 }
 
 .quote-section>.quote-wrapper>p{
@@ -164,6 +173,7 @@
    letter-spacing: 0.1rem;
   color: var(--secondary-color);
   margin: auto 0;
+  height: 50%;
 }
 
 /* .quote-section>.quote-wrapper>p{
