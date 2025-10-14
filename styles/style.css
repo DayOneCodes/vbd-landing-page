@@ -290,6 +290,8 @@ footer>p{
   background-color: inherit;
   font-weight: 600;
   text-align: center;
+  position: relative;
+  top: 50%;
 }
 
 /* JS TOGGLE */
