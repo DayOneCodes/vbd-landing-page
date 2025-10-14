@@ -70,12 +70,20 @@ if (mobileNavElement.classList.contains('mobile-nav-display'))
       }, 1100);
    };
 
-   if (window.scrollY > 2752 && window.scrollY < 3220){
-      landingPageHeaderElement.style.background = "var(--secondary-color)"
-      brandNameElement.style.color = "var(--primary-color)"
+   if (window.scrollY > 2752 && window.scrollY < 3100){
+      landingPageHeaderElement.style.background = "var(--secondary-color)";
+      brandNameElement.style.color = "var(--primary-color)";
+
+      hamburgerMenuLines.forEach((lines) => {
+         lines.style.background = "var(--primary-color)"
+      });
    } else {
-      landingPageHeaderElement.style.background = "none"
-      brandNameElement.style.color = "var(--secondary-color)"
+      landingPageHeaderElement.style.background = "none";
+      brandNameElement.style.color = "var(--secondary-color)";
+
+      hamburgerMenuLines.forEach((lines) => {
+         lines.style.background = "var(--secondary-color)"
+      });
    };
 }
 })

@@ -61,16 +61,24 @@
   margin-bottom: var(--body-element-spacing);
 }
 
+
 .contact-me-section>div>form>.inputs>input{
   padding: var(--button-padding);
   background: inherit;
-  border: none;
   color: var(--primary-color);
-  border-bottom: 1px solid;
+  border: 1px solid var(--secondary-color);
+  border-bottom-color: var(--primary-color);
   margin-right: var(--body-element-spacing);
   border-radius: 0.3rem;
-  border-color: var(--primary-color);
+  /* border-color: var(--primary-color); */
 }
+
+.contact-me-section>div>form>.inputs>input:focus, .contact-me-section>div>form>textarea:focus{
+  border:1px solid var(--primary-color) !important;
+  outline: none;
+  box-shadow: 0 0 4px var(--primary-color);
+}
+
 
 .contact-me-section>div>form>textarea{
   background: inherit;
@@ -80,6 +88,7 @@
   font-size: var(--body-p-font);
   padding: var(--button-padding);
   height: 10rem;
+  border-radius: 0.3rem;
   margin-bottom: var(--body-element-spacing);
   color: var(--primary-color);
   border-color: var(--primary-color);
