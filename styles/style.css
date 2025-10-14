@@ -178,11 +178,12 @@ header>.brand-name{
 .second-page{
   background-color: var(--secondary-color);
   transition: all 0.3s ease-in-out;
-  position: absolute;
-  width: 450px;
-  height: 450px;
+  /* position: absolute;
+  width: 0px;
+  height: 0px; */
   /* top: var(--header-height); */
-  top: calc(var(--header-height) + 3.5rem);
+  /* top: calc(var(--header-height) + 3.5rem); */
+  /* bottom: 0; */
   right: 10rem;
   z-index: 4;
   /* padding: var(--section-padding); */
@@ -281,14 +282,15 @@ footer>p{
   animation: zindex 0.3s ease-in-out 0s 1 normal forwards;
   opacity: 1;
   background-color: var(--primary-color);
-
 }
 
 .animation-second-page{
   height: auto;
   width: 100vw;
+  position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
   opacity: 1;
   border: none;
   box-shadow: none;
@@ -297,6 +299,7 @@ footer>p{
   background-color: var(--secondary-color);
   /* animation: subtleBackgroundRemoval 0.3s ease-in-out 0s 1 normal forwards; */
   display: block;
+  animation: subtleDisplay 0.3s ease-in-out 0s 1 normal forwards;
 }
 
 .js-display-element{
@@ -344,10 +347,10 @@ footer>p{
     opacity: 0;
   }
   80%{
-    opacity: 0.3;
+    opacity: 0;
   }
   90%{
-    opacity: 0.6;
+    opacity: 0;
   }
   100%{
     opacity: 1;
