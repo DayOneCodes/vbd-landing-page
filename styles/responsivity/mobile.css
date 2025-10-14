@@ -27,10 +27,6 @@
   --body-button-width: 55%;
 }
 
-*{
-  overflow-x: hidden;
-}
-
 .mobile-nav{
   display: flex;
   position: fixed;
