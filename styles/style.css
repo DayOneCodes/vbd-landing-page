@@ -15,6 +15,7 @@ body{
   height: auto;
   overflow-x: hidden;
   background-color: var(--primary-color);
+  position: relative;
 }
 
 :root{
@@ -268,7 +269,19 @@ footer>p{
   font-size: var(--copyright-font);
 }
 
-
+/*  */
+.back-to-top-btn{
+  color: black;
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: 600;
+  z-index: 800;
+  position: fixed;
+  bottom: 0
+}
 
 /* JS TOGGLE */
 
