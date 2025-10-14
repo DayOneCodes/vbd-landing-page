@@ -279,6 +279,8 @@ footer>p{
   z-index: 800;
   position: fixed;
   display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 0
 }
 
