@@ -44,7 +44,7 @@
 
 .portfolio-section>.portfolio-header-container>hr{
   width: 10%;
-  margin-bottom: var(--body-element-spacing);
+  /* margin-bottom: var(--body-element-spacing); */
   background-color: black;
 }
 

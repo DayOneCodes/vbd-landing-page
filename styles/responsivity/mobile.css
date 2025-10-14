@@ -20,7 +20,7 @@
   --header-margin-bottom: 1.5rem; 
   --title-margin-bottom: 0.75rem;
     /* Confirm following styles */
-  --hero-title-font: 2.2rem;
+  --hero-title-font: 2.5rem;
   --button-padding: 0.5rem;
   --body-element-spacing: 1.5rem;
   --body-button-padding:  1rem;
@@ -83,7 +83,7 @@
   width: 30px;
   cursor: pointer;
   /* background-color: inherit; */
-  background-color: purple;
+  background-color: inherit;
 }
 
 .hamburger-menu>div{
@@ -94,8 +94,7 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   /* background-color: inherit; */
-  background-color: green;
-
+  background-color: white;
 }
 
 /* LANDING PAGE */
@@ -143,16 +142,21 @@
   top: -2rem;
 }
 
+.view-my-works-btn{
+  position: relative;
+  top: -8px;
+}
+
 /* POTFOLIO SECTION */
 .portfolio-section{
-  margin-top: 10rem;
+  margin-top: 12rem;
   padding: 1rem;
 }
 
 .landing-carousel-parent-div{
   max-height: 300px;
   overflow-y: scroll;
-  padding-top: 168vh;
+  padding-top: 208vh;
 }
 
 .portfolio-flex-row{

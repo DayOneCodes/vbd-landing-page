@@ -291,7 +291,7 @@ footer>p{
   border: none;
   box-shadow: none;
   /* See if you prefer the margin top to be on the original position of this page */
-  margin-top: calc(var(--header-height) - 2rem) ;
+  /* margin-top: calc(var(--header-height)) ; */
   background-color: var(--secondary-color);
   /* animation: subtleBackgroundRemoval 0.3s ease-in-out 0s 1 normal forwards; */
   display: block;
