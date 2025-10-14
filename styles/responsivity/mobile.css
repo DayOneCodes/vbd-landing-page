@@ -166,7 +166,7 @@
   margin: auto;
   display: flex;
   width: 80%;
-  height: 80%;
+  height: 100%;
 }
 
 .quote-section>.quote-wrapper>p{
@@ -175,7 +175,9 @@
    letter-spacing: 0.1rem;
   color: var(--secondary-color);
   margin: auto;
-  height: 50%;
+  height: 100%;
+  position: relative;
+  left: -40px;
 }
 
 /* .quote-section>.quote-wrapper>p{
