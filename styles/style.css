@@ -281,7 +281,7 @@ footer>p{
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0
+  bottom: -20px;
 }
 
 .back-to-top-btn>div{
@@ -291,7 +291,6 @@ footer>p{
   font-weight: 600;
   text-align: center;
   position: relative;
-  top: 50%;
 }
 
 /* JS TOGGLE */
