@@ -140,7 +140,7 @@
 .about-me-image{
   min-height: 420px;
   position: relative;
-  top: -2rem;
+  top: -0.8rem;
 }
 
 .view-my-works-btn{
@@ -155,9 +155,11 @@
 }
 
 .landing-carousel-parent-div{
-  max-height: 300px;
-  overflow-y: scroll;
-  padding-top: auto;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
 }
 
 .portfolio-flex-row{

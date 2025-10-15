@@ -1,6 +1,7 @@
 import * as useGlobalVariable from "./global-variables.js";
 import * as useFunction from "./functions.js";
 import * as mobile from "./mobile.js";
+import * as temporaryScript from "./temporary-scripts.js"
 
 const landingPageElement = document.querySelector('.landing-page');
 const secondPageElement = document.querySelector('.second-page');
@@ -21,6 +22,7 @@ scrollPageTo("top")
 
 //Listen for scroll...
 let displayed = false;
+
 document.addEventListener('scroll', (event) =>{
    console.log(window.scrollY)
 if (mobileNavElement.classList.contains('mobile-nav-display')) 

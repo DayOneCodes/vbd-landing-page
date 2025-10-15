@@ -13,7 +13,7 @@
 
 body{
   height: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   background-color: transparent;
   position: relative;
 }
