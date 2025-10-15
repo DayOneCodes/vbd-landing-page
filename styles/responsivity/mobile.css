@@ -155,12 +155,24 @@
 }
 
 .landing-carousel-parent-div{
-  max-height: 600px;
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto;
+  scroll-behavior: smooth;
+  position: relative;
 }
+
+.landing-carousel-parent-div::-webkit-scrollbar{
+  width: 10px;
+}
+
+.landing-carousel-parent-div::-webkit-scrollbar-thumb{
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
 
 .portfolio-flex-row{
   flex-direction: column;
