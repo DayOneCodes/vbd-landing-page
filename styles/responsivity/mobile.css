@@ -25,6 +25,12 @@
   --body-element-spacing: 1.5rem;
   --body-button-padding:  1rem;
   --body-button-width: 55%;
+  --footer-max-height: 600px;
+}
+
+header{
+ padding: 30px 35px;
+ z-index: 400000;
 }
 
 .mobile-nav{
@@ -61,6 +67,8 @@
   font-weight: bold;
   cursor: pointer;
   background-color: inherit;
+  display: flex;
+  justify-content: center;
 }
 
 .mobile-nav>nav>ul>li>a{
@@ -156,7 +164,7 @@
 }
 
 .landing-carousel-parent-div{
-  max-height: 400px;
+  max-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -226,6 +234,7 @@
 
 footer{
   flex-direction: column;
+  max-height: var(--footer-max-height);
 }
 
 /* JS TOGGLES */

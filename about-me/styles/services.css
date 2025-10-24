@@ -1,0 +1,94 @@
+:root{
+  --primary-color: #172727;
+  --secondary-color: white;
+  --h1-font: 2.8rem;
+  --h2-font: 2.2rem;
+  --h3-font: 1.8rem;
+  --body-p-font: 1.1rem;
+  --menu-font: 1rem;
+  --nav-links-font: 1.1rem;
+  --footer-heading-font: 1.3rem;
+  --brand-name-font: 1.8rem; 
+  --copyright-font: 0.9rem; 
+  --footer-p-font: 1rem;
+  --header-padding: 1.2rem 3rem;
+  --section-padding: 4rem;
+  --footer-padding: 4rem 3rem;
+  --header-height: 80px;
+  --menu-spacing: 0.75rem;
+  --header-margin-bottom: 2.5rem; 
+  --title-margin-bottom: 1.25rem; 
+  /* Confirm following styles */
+  --hero-title-font: 600%;
+  --button-padding: 0.5rem;
+  --body-element-spacing: 1.5rem;
+  --body-button-padding:  1rem 0;
+  --body-button-width: 40%;
+}
+
+.services-section{
+  background-color: inherit;
+  height: auto;
+  gap: var(--body-element-spacing);
+  padding: 4rem 0;
+}
+
+.services-section>.services-article{
+  height: 500px;
+  flex: 1;
+  justify-content: center;
+  gap: var(--body-element-spacing);
+}
+
+.services-section>.services-photo-div{
+  flex: 1;
+  /* border: 2px solid #333; */
+  height: 500px;
+  background: inherit;
+  justify-content: center;
+  align-items: center;
+  gap: var(--body-element-spacing);
+}
+
+.services-section>.services-photo-div>div:nth-child(1),.services-section>.services-photo-div>div:nth-child(3){
+  /* border: 2px solid #333; */
+  width: 12.5rem;
+  height: 10rem;
+}
+
+.double-card{
+  gap: var(--body-element-spacing);
+}
+
+.double-card>div{
+  /* border: 2px solid #333; */
+  width: 12.5rem;
+  height: 10rem;
+}
+
+.services-section>.services-article>div>h2{
+  font-size: var(--h2-font);
+  width: 100%;
+}
+
+.services-section>.services-article>div>hr{
+  width: 10%;
+  position: relative;
+  left: -45%;
+}
+
+.services-section>.services-article>article{
+  text-align: justify;
+  font-size: var(--body-p-font);
+}
+
+.services-section>.services-article>button{
+  padding: var(--body-button-padding);
+  width: var(--body-button-width);
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: var(--body-p-font);
+  font-weight: 600;
+}
+

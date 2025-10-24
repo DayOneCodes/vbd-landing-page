@@ -1,0 +1,238 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display SC", serif;
+}
+
+:root{
+  --primary-color: #172727;
+  --secondary-color: white;
+  --h1-font: 2.8rem;
+  --h2-font: 2.2rem;
+  --h3-font: 1.8rem;
+  --body-p-font: 1.1rem;
+  --menu-font: 1rem;
+  --nav-links-font: 1.1rem;
+  --footer-heading-font: 1.3rem;
+  --brand-name-font: 1.8rem; 
+  --copyright-font: 0.9rem; 
+  --footer-p-font: 1rem;
+  --header-padding: 1.2rem 3rem;
+  --section-padding: 4rem;
+  --footer-padding: 4rem 3rem;
+  --header-height: 80px;
+  --menu-spacing: 0.75rem;
+  --header-margin-bottom: 2.5rem; 
+  --title-margin-bottom: 1.25rem; 
+  /* Confirm following styles */
+  --hero-title-font: 600%;
+  --button-padding: 0.5rem;
+  --body-element-spacing: 1.5rem;
+  --body-button-padding:  1rem 0;
+  --body-button-width: 40%;
+}
+
+
+body{
+  display: flex;
+  height: 100vh;
+  background-color: var(--secondary-color);
+}
+
+button{
+  cursor: pointer;
+}
+
+
+/* HEADER */
+
+header {
+ height: var(--header-height);
+ padding: var(--header-padding);
+ margin-bottom: var(--header-margin-bottom);
+ display: flex;
+ justify-content: space-between;
+ background-color: var(--primary-color);
+ width: 100%;
+ align-items: center;
+ position: fixed;
+ z-index: 31;
+ transition: all 0.2s ease-in-out;
+}
+
+header::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/page-images/image.png');
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.brand-name{
+  font-size: var(--brand-name-font);
+  z-index: 1;
+  background: transparent;
+}
+
+header div{
+color: var(--secondary-color);
+background-color: inherit;
+}
+
+.nav-list{
+  background-color: inherit;
+  background: transparent;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+nav{
+  z-index: 1;
+  background: transparent;
+}
+
+.nav-list li{
+  display: inline;
+  padding-inline: var(--menu-spacing);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.1s ease-in-out;
+  border: none;
+  background: transparent;
+}
+
+.nav-list li a{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+  background: transparent;
+  font-size: var(--nav-links-font);
+}
+
+.nav-list li:nth-child(3) a{
+  border-bottom: solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.nav-list li a:hover{
+  border-bottom: solid var(--secondary-color);
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+
+/* CONTAINER */
+
+.container{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container .title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.container .title h1 {
+   color: var(--primary-color);
+  font-weight: 600;
+  font-size: var(--h1-font);
+  margin-bottom: var(--title-margin-bottom);
+}
+
+hr{
+  width: 90%;
+  margin: auto;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  height: 100%;
+}
+
+
+/* *****************FOOTER******************* */
+
+footer{
+  max-height: 205px;
+  display: flex;
+  padding: 30px 60px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  position: relative;
+}
+
+footer::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/page-images/image.png');
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+footer>p{
+  color: var(--secondary-color);
+  z-index: 1;
+}
+
+
+.footer-card h3{
+  font-size: var(--footer-heading-font);
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+.footer-card hr{
+  width: 10%;
+  margin-bottom: 1.5rem;
+}
+
+
+.footer-card{
+  margin-bottom: 2.5rem;
+  z-index: 1;
+  justify-content: center;
+}
+
+.footer-card p{
+  margin-top: 0.3rem;
+}
+
+.get-in-touch-card>div>p{
+  text-align: center;
+}
+
+/* Undisplay mobile navigation menu */
+
+.mobile-nav{
+  display: none;
+}
+
+

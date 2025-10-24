@@ -24,7 +24,7 @@ scrollPageTo("top")
 let displayed = false;
 
 document.addEventListener('scroll', (event) =>{
-   console.log(window.scrollY)
+   // console.log(window.scrollY)
 if (mobileNavElement.classList.contains('mobile-nav-display')) 
 {
 //... animate the hamburger menu divs

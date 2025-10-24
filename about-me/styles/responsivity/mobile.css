@@ -1,0 +1,193 @@
+@media  (max-width: 768px) { 
+
+:root{
+  --primary-color: #172727;
+  --secondary-color: white;
+  --h1-font: 1.8rem;
+  --h2-font: 1.5rem;
+  --h3-font: 1.3rem;
+  --body-p-font: 0.95rem;
+  --menu-font: 0.9rem;
+  --nav-links-font: 1rem;
+  --footer-heading-font: 1.1rem;
+  --brand-name-font: 1.2rem;
+  --copyright-font: 0.75rem;
+  --footer-p-font: 0.85rem;
+  --header-padding: 0.8rem 1rem;
+  --section-padding: 2rem 0;
+  --footer-padding: 2rem 1rem;
+  --header-height: 60px;
+  --menu-spacing: 0.5rem;
+  --header-margin-bottom: 1.5rem; 
+  --title-margin-bottom: 0.75rem;
+    /* Confirm following styles */
+  --hero-title-font: 2.5rem;
+  --button-padding: 0.5rem;
+  --body-element-spacing: 1.5rem;
+  --body-button-padding:  1rem;
+  --body-button-width: 55%;
+  --footer-max-height: 600px;
+}
+
+ body{
+  height: auto;
+ }
+
+header{
+ padding: 30px 35px;
+ z-index: 400000;
+}
+
+.nav-list{
+  display: none;
+}
+
+.hamburger-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 18px;
+  width: 30px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.hamburger-menu>div{
+  height: 3px;
+  width: 100%;
+  z-index: 20;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+ /* Navs */
+
+  .mobile-nav{
+    display: flex;
+    position: fixed;
+    color: #333;
+    top: var(--header-height);
+    right: -1px;
+    left: 25%;
+    bottom: 0;
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+    transform: translateX(101%);
+    z-index: 300000;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .mobile-nav>nav{
+    margin: 30px auto;
+    background-color: inherit;
+  }
+
+  .mobile-nav>nav>ul{
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+  }
+
+   .mobile-nav>nav>ul>li{
+    padding-block: var(--menu-spacing);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+   }
+
+    .mobile-nav>nav>ul>li>a{
+    background-color: inherit;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    }
+
+    /* HERO */
+    .hero{
+      padding: 0;
+    }
+
+    /* ABOUT ME SECTION */
+
+    .about-me-section{
+      flex-direction: column-reverse;
+      height: 100vh;
+    
+    }
+
+    .about-me-section>.about-me-photo-div{
+      width: 100%;
+      height: 100%;
+      flex: 2;
+    }
+
+    .about-me-section>.about-me-article{
+      justify-content: start;
+      height: auto;
+      flex: 1;
+    }
+
+    /* SERVICES SECTION */
+
+    .services-section, .services-section>.services-photo-div{
+      flex-direction: column;
+    }
+
+    .services-section>.services-article{
+      justify-content: start;
+    }
+
+    .services-section>.services-photo-div{
+      position: relative;
+      bottom: 70px;
+    }
+    .services-section>.services-article>button{
+      position: relative;
+      top: 570px;
+      left: 23%;
+    }
+
+    .services-section>.services-photo-div>div:nth-child(1),.services-section>.services-photo-div>div:nth-child(3), .double-card>div{
+      max-width: 155px;
+    }
+
+    .double-card{
+      flex-direction: row;
+    }
+
+   
+
+/* FOOTER  */
+
+footer{
+  flex-direction: column;
+  max-height: var(--footer-max-height);
+}
+
+
+/* JS TOGGLES */
+
+.mobile-nav-display{
+  transform: translateX(0%);
+}
+
+.hamburger-1{
+  transform: rotate(45deg) translateY(11px);
+}
+
+.hamburger-2{
+  transform: rotate(-45deg) translateY(-11px); 
+}
+
+.hamburger-3{
+    display: none;
+  }
+}
