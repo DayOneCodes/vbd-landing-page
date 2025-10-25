@@ -7,6 +7,7 @@ const landingPageElement = document.querySelector('.landing-page');
 const secondPageElement = document.querySelector('.second-page');
 const h1Element = document.getElementById('js-h1');
 const heroViewPortfolioBtn = document.getElementById('js-view-portfolio-btn')
+const viewPortfolioBtn2 = document.getElementById("js-view-portfolio-btn2")
 const landingPageHeroTitleContainerElement = document.getElementById('js-landing-page-hero-title-container')
 const aboutMeSection = document.getElementById('js-about-me-section');
 const contactSection = document.getElementById('js-contact-me-section');
@@ -15,6 +16,7 @@ const quoteSectionElement = document.getElementById('js-quote-section')
 const footerElement = document.getElementById('js-footer');
 const landingPageHeaderElement = document.getElementById("js-landing-page-header");
 const brandNameElement = document.getElementById("js-brand-name");
+const viewMyWorksBtn = document.getElementById("js-view-my-works-btn")
 
 
 //On reload, scroll screen back to top to prevent wierd animation behaviour
@@ -88,4 +90,17 @@ if (mobileNavElement.classList.contains('mobile-nav-display'))
       });
    };
 }
+})
+
+
+viewMyWorksBtn.addEventListener("click", () => {
+   window.location.href = "../portfolio-page/index.html";
+})
+
+heroViewPortfolioBtn.addEventListener("click", () => {
+   window.location.href = "../portfolio-page/index.html";
+})
+
+viewPortfolioBtn2.addEventListener("click", () => {
+   window.location.href = "../portfolio-page/index.html";
 })
