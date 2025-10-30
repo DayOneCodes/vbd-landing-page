@@ -139,17 +139,17 @@
                       <hr>
                   </header>
                   <p>I would love to get suggestions from you</p>
-                  <form>
+                  <form id="js-user-message">
                       <div class="inputs">
-                        <input type="text" placeholder="Your name" class="input-your-name">
+                        <input type="text" placeholder="Your name" id="name" class="input-your-name" required>
 
-                        <input class="input-your-email" type="email" placeholder="Your E-mail Address">
+                        <input class="input-your-email" type="email" id="email" placeholder="Your E-mail Address" required>
                       </div>
 
 
-                      <textarea placeholder="Your Message"></textarea>
+                      <textarea placeholder="Your Message" id="message" required></textarea>
 
-                      <button class="send-mail-button">Send it</button>
+                      <button type="submit" class="send-mail-button">Send it</button>
                   </form>
               </div>
           </section>

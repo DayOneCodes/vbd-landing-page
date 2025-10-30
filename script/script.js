@@ -2,6 +2,7 @@ import * as useGlobalVariable from "./global-variables.js";
 import * as useFunction from "./functions.js";
 import * as mobile from "./mobile.js";
 import * as temporaryScript from "./temporary-scripts.js"
+import { createClient } from 'https://esm.sh/@supabase/supabase-js';
 
 const landingPageElement = document.querySelector('.landing-page');
 const secondPageElement = document.querySelector('.second-page');
@@ -16,7 +17,8 @@ const quoteSectionElement = document.getElementById('js-quote-section')
 const footerElement = document.getElementById('js-footer');
 const landingPageHeaderElement = document.getElementById("js-landing-page-header");
 const brandNameElement = document.getElementById("js-brand-name");
-const viewMyWorksBtn = document.getElementById("js-view-my-works-btn")
+const viewMyWorksBtn = document.getElementById("js-view-my-works-btn");
+const userMessageFormElement = document.getElementById("js-user-message")
 
 
 //On reload, scroll screen back to top to prevent wierd animation behaviour
@@ -104,3 +106,34 @@ heroViewPortfolioBtn.addEventListener("click", () => {
 viewPortfolioBtn2.addEventListener("click", () => {
    window.location.href = "../portfolio-page/index.html";
 })
+
+
+// USER MESSAGE 
+const supabaseUrl = 'https://nmlcxzwtsstqoipzscqd.supabase.co'
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5tbGN4end0c3N0cW9pcHpzY3FkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4MzQyMDMsImV4cCI6MjA3NzQxMDIwM30.UM3uvUq6wINCAAOTmQXGP4avVoNmgdild9YYL2J2Hvc"
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+
+userMessageFormElement.addEventListener("submit", async (event) => {
+   event.preventDefault()
+
+   const name = document.getElementById("name").value;
+   const email = document.getElementById("email").value;
+   const message = document.getElementById("message").value;
+
+   const { error } = await supabase
+      .from("user-message")
+      .insert([{name, email, message}]);
+
+   if (error) {
+      alert(`Error Sending: ${error}`)
+   }
+   else {
+      alert(   `Message sent successfully`   )
+   }
+
+   console.log(`Form submmission confirmed
+      name: ${name}
+      email: ${email}
+      message: ${message}`)
+});
