@@ -1,7 +1,7 @@
 @media (max-width: 576px) {
 :root{
   --primary-color: #172727;
-  --secondary-color: #F2EDFA;
+  --secondary-color: white;
   --h1-font: 1.8rem;
   --h2-font: 1.5rem;
   --h3-font: 1.3rem;
@@ -61,7 +61,7 @@
     color: #333;
     top: var(--header-height);
     right: -1px;
-    left: 50%;
+    left: 25%;
     bottom: 0;
     background-color: var(--secondary-color);
     transition: all 0.2s ease-in-out;

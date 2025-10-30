@@ -1,6 +1,6 @@
 :root{
   --primary-color: #172727;
-  --secondary-color: #F2EDFA;
+  --secondary-color: white;
   --h1-font: 2.8rem;
   --h2-font: 2.2rem;
   --h3-font: 1.8rem;
@@ -51,7 +51,7 @@
 }
 
 .contact-me-section>div>p{
-  font-family: var(--body-p-font);
+  font-size: var(--body-p-font);
   margin-bottom: var(--body-element-spacing);
   color: var(--primary-color);
 }
@@ -105,6 +105,28 @@
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
+
+.contact-me-section>div>form>.form-submit-confirmation{
+  color: var(--primary-color);
+  display: inline;
+  margin-left: var(--body-element-spacing);
+  font-weight: 800;
+  opacity: 0;
+}
+
+@keyframes confirmation {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
 
 
  

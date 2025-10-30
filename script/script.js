@@ -19,6 +19,7 @@ const landingPageHeaderElement = document.getElementById("js-landing-page-header
 const brandNameElement = document.getElementById("js-brand-name");
 const viewMyWorksBtn = document.getElementById("js-view-my-works-btn");
 const userMessageFormElement = document.getElementById("js-user-message")
+const formSubmitConfirmationMessage = document.getElementById("js-form-submit-confirmation")
 
 
 //On reload, scroll screen back to top to prevent wierd animation behaviour
@@ -120,20 +121,23 @@ userMessageFormElement.addEventListener("submit", async (event) => {
    const name = document.getElementById("name").value;
    const email = document.getElementById("email").value;
    const message = document.getElementById("message").value;
-
+   
    const { error } = await supabase
       .from("user-message")
       .insert([{name, email, message}]);
 
    if (error) {
-      alert(`Error Sending: ${error}`)
+      formSubmitConfirmationMessage.innerText =  `Error: ${error.message}`;
+
+     formSubmitConfirmationMessage.style.animation = "confirmation 2s ease-in-out"
    }
    else {
-      alert(   `Message sent successfully`   )
+     formSubmitConfirmationMessage.innerText =  `Message sent successfully`;
+
+     formSubmitConfirmationMessage.style.animation = "confirmation 2s ease-in-out"
    }
 
-   console.log(`Form submmission confirmed
-      name: ${name}
-      email: ${email}
-      message: ${message}`)
+   document.getElementById("name").value = "";
+   document.getElementById("email").value = "";
+   document.getElementById("message").value = "";
 });

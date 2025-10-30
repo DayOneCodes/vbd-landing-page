@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display SC", serif;
+  font-family: "Playfair Display", serif;
 }
 
 :root{
@@ -33,6 +33,7 @@
   --body-element-spacing: 1.5rem;
   --body-button-padding:  1rem 0;
   --body-button-width: 40%;
+  --grey: #E0E0E6;
 }
 
 
@@ -171,6 +172,71 @@ hr{
   height: 100%;
 }
 
+.hero>.form-section>form>p, .hero>.form-section>form>button, .hero>.form-section>form>textarea{
+  display: block;
+  margin-bottom: calc(var(--h1-font));
+}
+
+.hero>.form-section>form>p{
+  font-size: var(--body-p-font);
+  color: var(--primary-color);
+}
+
+.hero>.form-section>form>button{
+  cursor: pointer;
+  border: none;
+  padding: var(--body-button-padding);
+  width: var(--body-button-width);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-size: var(--body-p-font);
+  font-weight: 600;
+}
+
+.hero>.form-section>form>div>.enter-your-name{
+  margin-right: var(--body-element-spacing);
+  margin-bottom: calc(var(--h1-font)) ;
+}
+
+.hero>.form-section>form>div>.enter-your-email{
+  margin-bottom: calc(var(--h1-font)) ;
+}
+
+.hero>.form-section>form>div>input{
+  padding: var(--body-button-padding);
+  width: var(--body-button-width);
+  color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-bottom-color: var(--primary-color);
+  margin-right: var(--body-element-spacing);
+  border-radius: 0.3rem;
+  background-color: var(--grey);
+}
+
+.hero>.form-section>form>div>input::placeholder{
+  padding-left: 1rem;
+  font-size: var(--body-p-font);
+}
+
+.hero>.form-section>form>textarea{
+  height: 20rem;
+  width: 100%;
+  font-size: var(--body-p-font);
+  padding-top: 1rem;
+  border: none;
+  border-bottom: 1px solid;
+  padding: var(--button-padding);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: var(--grey);
+}
+
+.hero>.form-section>form>textarea:focus, .hero>.form-section>form>div>input:focus{
+  border:1px solid var(--primary-color) !important;
+  outline: none;
+  box-shadow: 0 0 4px var(--primary-color);
+  background: inherit;
+}
 
 /* *****************FOOTER******************* */
 

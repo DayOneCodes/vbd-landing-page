@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- ICONS/CDNJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- STYLESHEETS -->
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/responsivity/mobile.css">
   <link rel="stylesheet" href="./styles/responsivity/tablet.css">
@@ -55,7 +65,21 @@
 
       <section class="hero">
           <section class="form-section">
+            <form id="user-message-form">
+              <p>Begin Your Experience</p>
 
+              <div class="form-inputs-container">
+                <input type="text" id="name-two" placeholder="Your name" class="enter-your-name" required>
+
+                <input type="email" id="email-two" placeholder="Your Email address"
+                class="enter-your-email"
+                required>
+              </div>
+
+              <textarea placeholder="Your Message" id="message-two" required></textarea>
+
+               <button type="submit" class="send-mail-button">Send it</button>
+            </form>
           </section>
       </section>
 
@@ -77,7 +101,7 @@
           <hr>
         
           <div>
-              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <!-- <a href=""><i class="fab fa-facebook-f"></i></a> -->
               <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40editsb_ydee%3F_t%3DZN-8uqCDgAvdZe%26_r%3D1%26fbclid%3DPAZXh0bgNhZW0CMTEAAaekezL6FTIhprYrEQKKNitIPcp0ITOD9iplbk8do0tJz9q86rwZSkZE5Mvgjg_aem_BWtxVVR0D0SkfcSxbOAzGw&e=AT2nknWDKEDsV9pg23EMJEDcHZO7MpkeKryXtzceFCh34VBB9-gpqEljBagVkZs247HxjzNhNyixOy6y7YkLrpTF3OAjbnZvn8Mc2F28mCHVJcB7tQmkYzw" target="_blank"><i class="fab fa-tiktok"></i></a>
               <a href="https://www.instagram.com/visualsby_dave?utm_source=ig_web_button_share_sheet&igsh=MXFzbHZmazQ1bGphbg==" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
