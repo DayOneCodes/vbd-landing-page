@@ -67,6 +67,8 @@ header{
   font-weight: bold;
   cursor: pointer;
   background-color: inherit;
+  display: flex;
+  justify-content: center;
 }
 
 .mobile-nav>nav>ul>li>a{
