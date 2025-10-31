@@ -238,6 +238,28 @@ hr{
   background: inherit;
 }
 
+
+.hero>.form-section>form>.form-submit-confirmation{
+  color: var(--primary-color);
+  display: inline;
+  opacity: 0;
+  margin-left: var(--body-element-spacing);
+  font-weight: 600;
+}
+
+
+@keyframes confirmation {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
 /* *****************FOOTER******************* */
 
 footer{

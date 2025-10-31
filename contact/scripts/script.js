@@ -4,6 +4,8 @@ import { createClient  } from "https://esm.sh/@supabase/supabase-js"
 
 
 const userMessageFormElement = document.getElementById("user-message-form");
+const formSubmitConfirmationMessage = document.getElementById("js-form-submit-confirmation")
+
 
 // MESSAGE SEND
 
@@ -26,10 +28,14 @@ userMessageFormElement.addEventListener("submit", async (event) => {
 
 
   if (error) {
-    alert (error.message)
+    formSubmitConfirmationMessage.innerText =  `Error: ${error.message}`;
+
+     formSubmitConfirmationMessage.style.animation = "confirmation 2s ease-in-out"
   }
   else {
-    alert("Message successfully sent")
+     formSubmitConfirmationMessage.innerText =  `Message sent successfully`;
+
+     formSubmitConfirmationMessage.style.animation = "confirmation 2s ease-in-out"
   }
 
   document.getElementById("name-two").value = "";

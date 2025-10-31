@@ -24,6 +24,7 @@
   --body-element-spacing: 1.5rem;
   --body-button-padding:  1rem 0;
   --body-button-width: 40%;
+  --grey: #E0E0E6;
 }
 
 .contact-me-section{
@@ -71,9 +72,11 @@
   margin-right: var(--body-element-spacing);
   border-radius: 0.3rem;
   /* border-color: var(--primary-color); */
+  background-color: var(--grey);
 }
 
 .contact-me-section>div>form>.inputs>input:focus, .contact-me-section>div>form>textarea:focus{
+  background: inherit;
   border:1px solid var(--primary-color) !important;
   outline: none;
   box-shadow: 0 0 4px var(--primary-color);
@@ -92,6 +95,7 @@
   margin-bottom: var(--body-element-spacing);
   color: var(--primary-color);
   border-color: var(--primary-color);
+  background-color: var(--grey);
 }
 
 .contact-me-section>div>form>.send-mail-button{
@@ -110,7 +114,7 @@
   color: var(--primary-color);
   display: inline;
   margin-left: var(--body-element-spacing);
-  font-weight: 800;
+  font-weight: 600;
   opacity: 0;
 }
 
