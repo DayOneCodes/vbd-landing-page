@@ -147,7 +147,7 @@ header{
 }
 
 .about-me-image{
-  min-height: 420px;
+  min-height: 500px;
   position: relative;
   top: -0.8rem;
 }
@@ -196,7 +196,7 @@ header{
 .quote-section>.quote-wrapper{
   margin: auto;
   display: flex;
-  width: 80%;
+  width: 100%;
   height: 100%;
 }
 
@@ -206,9 +206,7 @@ header{
    letter-spacing: 0.1rem;
   color: var(--secondary-color);
   margin: auto;
-  height: 100%;
-  position: relative;
-  left: -40px;
+  height: fit-content;
 }
 
 /* .quote-section>.quote-wrapper>p{

@@ -7,7 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display SC", serif;
+  font-family: "Playfair Display", serif;
+  cursor: default;
 }
 
 :root{
@@ -55,8 +56,22 @@ header {
  transition: all 0.2s ease-in-out;
 }
 
+header::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/page-images/image.png');
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
 .brand-name{
   font-size: var(--brand-name-font);
+  z-index: 1;
+  background: transparent;
 }
 
 header div{
@@ -65,12 +80,17 @@ background-color: inherit;
 }
 
 .nav-list{
-  background-color: inherit;
   background-color: var(--primary-color);
+  background: transparent;
 }
 
 .mobile-nav{
   display: none;
+}
+
+nav{
+  z-index: 1;
+  background: transparent;
 }
 
 .nav-list li{
@@ -80,14 +100,14 @@ background-color: inherit;
   font-size: 1rem;
   transition: all 0.1s ease-in-out;
   border: none;
-  background-color: var(--primary-color);
+  background: transparent;
 }
 
 .nav-list li a{
   text-decoration: none;
   cursor: pointer;
   color: var(--secondary-color);
-  background-color: inherit;
+  background: transparent;
   font-size: var(--nav-links-font);
 }
 
@@ -165,12 +185,26 @@ footer{
   align-items: center;
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  position: relative;
+}
+
+footer::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/page-images/image.png');
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 0;
 }
 
 footer>p{
   font-family: "Playfair Display", serif;
   color: var(--secondary-color);
   flex: 1;
+  z-index: 1;
 }
 
 
@@ -188,6 +222,7 @@ footer>p{
 .footer-card{
   margin-bottom: 2.5rem;
   flex: 1;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -217,6 +252,7 @@ footer>p{
 
 .my-social-links>div>a>i{
  font-size: 25px;
+  cursor: pointer;
 }
 
 .copyright-text{

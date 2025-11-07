@@ -9,6 +9,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
+  cursor: default;
 }
 
 body{
@@ -257,10 +258,6 @@ footer>p{
 }
 
 .get-in-touch-card>div>p{
-  text-align: center;
-}
-
-.get-in-touch-card>div>p{
   font-size: var(--footer-p-font);
 }
 
@@ -279,6 +276,7 @@ footer>p{
 
 .my-social-links>div>a>i{
   font-size: 25px;
+  cursor: pointer;
 }
 
 .copyright-text{

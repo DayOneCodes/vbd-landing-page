@@ -119,20 +119,19 @@ header{
 
     .about-me-section{
       flex-direction: column-reverse;
-      height: 100vh;
-    
+      /* height: 100vh; */
     }
 
     .about-me-section>.about-me-photo-div{
       width: 100%;
-      height: 100%;
-      flex: 2;
+      min-height: 500px;
+      /* flex: 2; */
     }
 
     .about-me-section>.about-me-article{
       justify-content: start;
       height: auto;
-      flex: 1;
+      /* flex: 1; */
     }
 
     /* SERVICES SECTION */

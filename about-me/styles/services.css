@@ -50,6 +50,34 @@
   gap: var(--body-element-spacing);
 }
 
+.services-section>.services-photo-div > div:nth-child(1){
+  background: url("../images/illustrations/undraw_fashion-photoshoot_zjiu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-section>.services-photo-div > div:nth-child(3){
+  background: url("../images/illustrations/undraw_moments_4a32.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-section>.services-photo-div>div:nth-child(2)>div:nth-child(1){
+  background: url("../images/illustrations/undraw_posting-photo_15k3.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-section>.services-photo-div>div:nth-child(2)>div:nth-child(2){
+  background: url("../images/illustrations/undraw_product-photography_pouq.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .services-section>.services-photo-div>div:nth-child(1),.services-section>.services-photo-div>div:nth-child(3){
   /* border: 2px solid #333; */
   width: 12.5rem;

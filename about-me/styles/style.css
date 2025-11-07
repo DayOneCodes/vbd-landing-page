@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
+  cursor: default;
 }
 
 :root{
@@ -228,8 +229,17 @@ footer>p{
   font-size: var(--footer-p-font);
 }
 
-.get-in-touch-card>div>p{
+.get-in-touch-card>div>p, .my-social-links>div{
   text-align: center;
+}
+
+.my-social-links>div>a>i{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.get-in-touch-card>div>a{
+  cursor: pointer;
 }
 
 /* Undisplay mobile navigation menu */
