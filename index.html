@@ -141,13 +141,13 @@
                   <p>Begin Your Experience</p>
                   <form id="js-user-message">
                       <div class="inputs">
-                        <input type="text" placeholder="Your name" id="name" class="input-your-name" required>
+                        <input type="text" name="name" placeholder="Your name" id="name" class="input-your-name" required>
 
-                        <input class="input-your-email" type="email" id="email" placeholder="Your E-mail Address" required>
+                        <input class="input-your-email" type="email" name="email" id="email" placeholder="Your E-mail Address" required>
                       </div>
 
 
-                      <textarea placeholder="Your Message" id="message" required></textarea>
+                      <textarea placeholder="Your Message" id="message" name="message" required></textarea>
 
                       <button type="submit" class="send-mail-button">Send it</button>
 
@@ -184,6 +184,8 @@
 <!-- End of footer -->
       </section>
   </div>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="script/script.js" type="module"></script>
 </body>
 </html>

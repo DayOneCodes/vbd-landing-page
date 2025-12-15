@@ -2,7 +2,8 @@ import * as useGlobalVariable from "./global-variables.js";
 import * as useFunction from "./functions.js";
 import * as mobile from "./mobile.js";
 import * as temporaryScript from "./temporary-scripts.js"
-
+import { EMAILJS_CONFIG } from "./config.js"
+emailjs.init(EMAILJS_CONFIG.USER_ID);
 
 const landingPageElement = document.querySelector('.landing-page');
 const secondPageElement = document.querySelector('.second-page');
@@ -112,6 +113,18 @@ viewPortfolioBtn2.addEventListener("click", () => {
 
 
 userMessageFormElement.addEventListener("submit", async (event) => {
-   event.preventDefault()
+   event.preventDefault();
 
+   emailjs.sendForm(
+      EMAILJS_CONFIG.SERVICE_ID, 
+      EMAILJS_CONFIG.TEMPLATE_ID, 
+      userMessageFormElement
+   ).then(
+      () => {
+      alert("Message sent successfully");
+      userMessageFormElement.reset();
+   }, 
+   (error)=> {
+      alert(`Error: ${error.text}`);
+   })
 });
