@@ -69,14 +69,14 @@
               <p>Begin Your Experience</p>
 
               <div class="form-inputs-container">
-                <input type="text" id="name-two" placeholder="Your name" class="enter-your-name" required>
+                <input type="text" name="name" id="name-two" placeholder="Your name" class="enter-your-name" required>
 
-                <input type="email" id="email-two" placeholder="Your Email address"
+                <input type="email" name="email" id="email-two" placeholder="Your Email address"
                 class="enter-your-email"
                 required>
               </div>
 
-              <textarea placeholder="Your Message" id="message-two" required></textarea>
+              <textarea placeholder="Your Message" id="message-two" name="message" required></textarea>
 
                <button type="submit" class="send-mail-button">Send it</button>
 
@@ -113,6 +113,7 @@
       </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="scripts/script.js" type="module"></script>
 </body>
 </html>

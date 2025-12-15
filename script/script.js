@@ -2,7 +2,7 @@ import * as useGlobalVariable from "./global-variables.js";
 import * as useFunction from "./functions.js";
 import * as mobile from "./mobile.js";
 import * as temporaryScript from "./temporary-scripts.js"
-import { createClient } from 'https://esm.sh/@supabase/supabase-js';
+
 
 const landingPageElement = document.querySelector('.landing-page');
 const secondPageElement = document.querySelector('.second-page');
@@ -109,34 +109,9 @@ viewPortfolioBtn2.addEventListener("click", () => {
 
 
 // USER MESSAGE 
-const supabaseUrl = 'https://nmlcxzwtsstqoipzscqd.supabase.co'
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5tbGN4end0c3N0cW9pcHpzY3FkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4MzQyMDMsImV4cCI6MjA3NzQxMDIwM30.UM3uvUq6wINCAAOTmQXGP4avVoNmgdild9YYL2J2Hvc"
-const supabase = createClient(supabaseUrl, supabaseKey)
 
 
 userMessageFormElement.addEventListener("submit", async (event) => {
    event.preventDefault()
 
-   const name = document.getElementById("name").value;
-   const email = document.getElementById("email").value;
-   const message = document.getElementById("message").value;
-   
-   const { error } = await supabase
-      .from("user-message")
-      .insert([{name, email, message}]);
-
-   if (error) {
-      formSubmitConfirmationMessage.innerText =  `Error: ${error.message}`;
-
-     formSubmitConfirmationMessage.style.animation = "confirmation 2s ease-in-out"
-   }
-   else {
-     formSubmitConfirmationMessage.innerText =  `Message sent successfully`;
-
-     formSubmitConfirmationMessage.style.animation = "confirmation 2s ease-in-out"
-   }
-
-   document.getElementById("name").value = "";
-   document.getElementById("email").value = "";
-   document.getElementById("message").value = "";
 });
