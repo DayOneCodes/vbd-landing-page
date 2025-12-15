@@ -38,7 +38,6 @@ if (mobileNavElement.classList.contains('mobile-nav-display'))
    hamburgerMenuLines[2].classList.toggle('hamburger-3');
 
    mobileNavElement.classList.remove('mobile-nav-display');
-
 }
  else 
 {
